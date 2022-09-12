@@ -28,7 +28,7 @@ async def change_status():
     await bot.change_presence(activity=disnake.Game(next(status)))
 
 
-@bot.slash_command(name="핑", description="핑을 측정합니다")
+@bot.slash_command(name="핑", description="핑을 측정합니다") #명령어 에시
 async def ping(inter: disnake.ApplicationCommandInteraction):
     await inter.response.defer(ephemeral=True)
     if round(bot.latency * 1000) <= 100:
@@ -44,7 +44,7 @@ async def ping(inter: disnake.ApplicationCommandInteraction):
     await inter.followup.send(f"{pl}:{round(bot.latency * 1000)}ms")
 
 
-@bot.slash_command(name="명령어 이름(띄어 쓰기 안됨)", description="명령어 설명")
+@bot.slash_command(name="명령어 이름(띄어 쓰기 안됨)", description="명령어 설명") #직접 만들어 볼 것
 async def 명령어이름(영어로) (inter: disnake.ApplicationCommandInteraction):
 
 
