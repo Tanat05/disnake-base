@@ -8,7 +8,6 @@ intents = disnake.Intents.all()
 
 bot = commands.AutoShardedBot(shard_count=3, command_prefix=commands.when_mentioned_or(
     "!"), owner_ids=dev, intents=intents)
-guild_list = bot.guilds
 
 
 @bot.event
