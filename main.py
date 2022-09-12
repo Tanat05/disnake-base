@@ -45,7 +45,7 @@ async def ping(inter: disnake.ApplicationCommandInteraction):
 
 
 @bot.slash_command(name="명령어 이름(띄어 쓰기 안됨)", description="명령어 설명")
-async def `명령어이름(영어로)`(inter: disnake.ApplicationCommandInteraction):
+async def 명령어이름(영어로) (inter: disnake.ApplicationCommandInteraction):
 
 
 bot.run("봇 토큰")
