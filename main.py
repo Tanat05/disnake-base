@@ -1,7 +1,7 @@
 import asyncio
 import disnake
 from disnake.ext import commands, tasks
-from disnake import Localized, OptionChoice
+from disnake import OptionChoice
 from itertools import cycle
 
 intents = disnake.Intents.all()
