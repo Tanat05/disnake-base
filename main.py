@@ -22,7 +22,7 @@ async def on_ready():
 status = cycle(["봇 상태1","봇 상태2"])
 
 
-@tasks.loop(seconds=3)
+@tasks.loop(seconds=3) #3초마다 상태 변경
 async def change_status():
     await bot.change_presence(activity=disnake.Game(next(status)))
 
@@ -44,7 +44,7 @@ async def ping(inter: disnake.ApplicationCommandInteraction):
 
 
 @bot.slash_command(name="명령어 이름(띄어 쓰기 안됨)", description="명령어 설명") #직접 만들어 볼 것
-async def 명령어이름(영어로) (inter: disnake.ApplicationCommandInteraction):
+async def slash(inter: disnake.ApplicationCommandInteraction):
 
 
 bot.run("봇 토큰")
